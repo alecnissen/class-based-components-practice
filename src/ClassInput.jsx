@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Count from "./Count";
 
 class ClassInput extends Component {
   constructor(props) {
@@ -38,7 +39,7 @@ class ClassInput extends Component {
 
   render() {
     return (
-
+      <> 
       
       <section>
         <h3>{this.props.name}</h3>
@@ -67,11 +68,15 @@ class ClassInput extends Component {
         </ul>
       </section>
 
+      <Count currentTodos={this.state.todos.length}></Count>
+
+      </>
     );
   }
-}
+} 
 
 export default ClassInput;
+
 
 
 
