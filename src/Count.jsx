@@ -4,34 +4,8 @@ import ClassInput from "./ClassInput";
 class Count extends Component { 
   constructor(props) { 
     super(props);
-
-    // eslint-disable-next-line react/prop-types
-    console.log(this.props);
-    
-    // eslint-disable-next-line react/prop-types
-    // this.state = { 
-    //     // eslint-disable-next-line react/prop-types
-    //     todos: this.props
-    //   }
-    //   console.log(this.state.todos.currentTodos);
+  }
   
-    // eslint-disable-next-line react/prop-types
-    console.log(props.currentTodos)
-    }
-
-
-
-    // I'm not sure if I need to update state again within this component? 
-    // make a copy of the array, then add the new todo items, 
-    
-    // handleChange(e) {
-    //   this.setState((state) => ({ 
-    //     ...state
-    //   }))
-    // }
-
-    
-
   render() { 
     return ( 
         <> 
@@ -45,18 +19,11 @@ class Count extends Component {
 
 export default Count
 
-// Implement a new class component, Count 
 
-// that displays the count of the number of todos, at any given time.
+// Implement an edit button for each task. 
 
-// 
+// It should replace the todo with an input field, 
 
-// I need someway to access the data within another component, 
-// props? 
-// but how can I pass props to the other component? 
+// and change the button itself to ‘Resubmit’, so the edits can be saved. 
 
-// I don't understand how I can pass props to another component usijng classes 
-// I dont see a way of how I can get access the todos within a different component? 
-
-// OK I can display the count of the numnber of todo items, 
-// how can I display a live/update count, I add another item and it will updated the count
+// This is a comparatively harder task, kudos for when you finish it!
